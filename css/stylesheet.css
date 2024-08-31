@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fonts */
+h1 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.5rem; 
+}
+
+/* Unordered List Styling */
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem; 
+}
+
+/* Navigation Items Styling */
+.nav-item {
+    position: relative;
+    padding: 14px 0; 
+}
+
+/* Navigation Links Styling */
+.nav-item a , .dropdown-toggle{
+    font-family: "Chakra Petch", sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem;
+    transition: background-color 1s;
+}
+
+.navbar .nav-list a ,.dropdown-toggle{
+    display: flex;
+    align-items: center;
+}
+
+/* Hover Effects */
+.nav-item a:hover,
+.nav-item a.active,
+.dropdown-toggle#active {
+    background-color: #6F8195;
+    color: #ffffff;
+}
+
+/* Image Styling */
+.nav-image {
+    height: 6rem; 
+    object-fit: cover;
+}
+
+.cart-image{
+    width: 1.5rem; /* Adjust size as needed */
+    height: 1.5rem;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #ffffff; /* Add a white background */
+    min-width: 160px;
+    z-index: 1000; /* Increased z-index to ensure dropdown is above other elements */
+    border-radius: 4px;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+/* Dropdown Links Styling */
+.dropdown-menu li a {
+    display: block;
+    font-family: "Chakra Petch", sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem;
+    transition: background-color 1s;
+    
+}
+
+/* Hover Effects for Dropdown */
+.dropdown-menu li a:hover {
+    background-color: #6F8195; 
+}
+
+/* Show Dropdown Menu on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* footer */
+.footer {
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Optional: Add a border at the top */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-nav {
+    margin-bottom: 1rem;
+}
+
+.footer-nav .footer-nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Space between links */
+}
+
+.footer-nav .footer-nav-list{
+    position: relative;
+}
+
+/* Footer Navigation Links Styling */
+.footer-nav .footer-nav-list a {
+    font-family: "Chakra Petch", sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 1rem;
+}

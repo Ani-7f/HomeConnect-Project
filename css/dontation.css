@@ -1,0 +1,22 @@
+/* Banner Styling */
+.banner {
+    background-color: #6F8195; /* Background color of the banner */
+    color: #ffffff; /* Text color */
+    padding: 2rem 1rem; /* Padding around the text */
+    text-align: center; /* Center align text */
+}
+
+.banner-content {
+    max-width: 800px; /* Maximum width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.banner h1 {
+    font-size: 3rem; /* Font size for the header */
+    margin: 0; /* Remove default margin */
+    font-weight: bold;
+}
+
+.font-colour{
+    color: black;
+}

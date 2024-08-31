@@ -1,0 +1,207 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fonts */
+h1, h2, h3 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('/images/WhatsApp\ Image\ 2024-08-31\ at\ 21.00.25_335356ab.jpg'); /* Updated path */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    color: #1b3b5f;
+}
+
+.about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Brochures Section */
+.brochures {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.brochures h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.brochure-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brochure-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brochure-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.brochure-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.brochure-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+    flex-grow: 1;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AAA957; /* Updated button color */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
+    transition: background-color 0.3s;
+    align-self: center; /* Center the button horizontally */
+    margin-top: 20px; /* Add space between the description and the button */
+}
+
+.btn-download:hover {
+    background-color: #8F8A4B; /* Slightly darker shade for hover */
+}
+
+/* Full-Width Brochure Card */
+.full-width-card {
+    width: 100%;
+    max-width: 800px; /* Limit the maximum width */
+    margin: 20px auto;
+    text-align: left;
+}
+
+.full-width-card img {
+    border-radius: 8px;
+}
+
+.full-width-card h3 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+
+.full-width-card p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Get Involved Section */
+.get-involved {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.get-involved h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.get-involved p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #AAA957;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
+    transition: background-color 0.3s;
+}
+
+.btn-learn-more:hover {
+    background-color: #8F8A4B;
+}
