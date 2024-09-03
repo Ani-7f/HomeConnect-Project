@@ -1,0 +1,233 @@
+.store-banner {
+    background-image: url('/images/store.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 10%; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; 
+    
+}
+
+.store-banner h1{
+    color: #ffffff;
+}
+
+.store-banner p{
+    color: #ffffff;
+}
+
+
+.store-banner-content {
+    position: relative;
+    max-width: 40rem;
+    height: auto;
+    text-align: start; 
+   left: 18rem;
+}
+
+.store-banner h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.store-banner p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.store-font-colour, #font-colour {
+    color: #aaa957;
+}
+
+/* Search Bar Below Banner */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 0 10%;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+    padding: 0.5rem 1rem;
+    background-color: #6F8195;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #576b7e;
+}
+
+/* Store Items */
+.store-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 10%;
+}
+
+.item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 20rem; 
+    max-width: 15rem;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-info {
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em; /* Improved font size */
+}
+
+.item p {
+    margin: 0;
+    font-size: 0.9em; /* Smaller font size */
+    color: #333;
+}
+
+.item h1 {
+    font-size: 1.1em; /* Smaller font size */
+    color: #6F8195; /* Matching the search button color */
+    margin: 10px 0 0;
+}
+
+.item-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.item-buttom-img {
+    height: auto;
+    display: block;
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
+/* Filter Buttons */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.filter-button {
+    padding: 0.5rem 1rem;
+    background-color: #6F8195;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.filter-button:hover {
+    background-color: #576b7e;
+}
+
+.filter-button.active {
+    background-color: #AAA957;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .store-banner-content {
+        max-width: 30rem;
+    }
+
+    .store-banner h1 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .item img {
+        height: 150px; /* Adjusted height for smaller screens */
+    }
+
+    .item {
+        min-height: 250px; /* Adjust height for smaller screens */
+    }
+
+    .store-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .store-banner p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+
+    .search-button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .filter-button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}

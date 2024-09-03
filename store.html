@@ -2,52 +2,169 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/store.css">
     <link rel="stylesheet" href="/css/stylesheet.css">
-    <link rel="stylesheet" href="/css/dontation.css">
     <title>HomeConnect</title>
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
-        <!-- Logo on the right -->
-        <img src="/logo/Home Connect.png" alt="Image" class="nav-image">
+        <div class="nav-logo">
+            <img src="logo/Home Connect.png" alt="Home Connect Logo" class="nav-image">
+            <span class="nav-title">HomeConnect</span>
+        </div>
 
+        <img src="/logo/Home Connect.png" alt="Logo" class="nav-image">
         <ul class="nav-list">
             <li class="nav-item"><a href="home.html">Home</a></li>
             <li class="nav-item"><a href="news.html">News</a></li>
             <li class="nav-item"><a href="contact.html">Contact</a></li>
             <li class="nav-item dropdown">
-                <span class="dropdown-toggle" id="active">Get Involved</span> 
+                <span class="dropdown-toggle" id="active">Get Involved</span>
                 <ul class="dropdown-menu">
                     <li><a class="active" href="/store.html">Store</a></li>
                     <li><a href="/donation.html">Donation</a></li>
                 </ul>
             </li>
             <li class="nav-item"><a href="/brochure.html">Brochure</a></li>
-            <li class="nav-item"><a href="/cart.html"><img src="/icons/add-to-cart.png" alt="Image" class="cart-image"></a></li>
+            <li class="nav-item"><a href="/cart.html"><img src="/icons/add-to-cart.png" alt="Cart" class="cart-image"></a></li>
         </ul>
     </nav>
-    <!-- footer -->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-info">
-            <p>&copy; 2024 HomeConnect. All rights reserved.</p>
+
+    <!-- Banner -->
+    <section class="store-banner">
+        <div class="store-banner-content">
+            <h1>Gift to the <span class="store-font-colour">Homeless</span></h1>
+            <p>At HomeConnect, every purchase you make goes beyond just acquiring a great product. We are committed to making a difference in the community, which is why a significant portion of the proceeds from each item you buy is donated to organizations dedicated to supporting the homeless.
+                By shopping with us, you’re not only finding high-quality items but also contributing to meaningful change. Your support helps provide essential services and resources to those in need, fostering a brighter future for individuals and families facing homelessness.</p>
         </div>
-        <nav class="footer-nav">
-            <ul class="footer-nav-list">
-                <li class="footer-nav-item"><a href="home.html">Home</a></li>|
-                <li class="footer-nav-item"><a href="news.html">News</a></li>|
-                <li class="footer-nav-item"><a href="contact.html">Contact</a></li>|
-                <li class="footer-nav-item"><a href="contact.html">Store</a></li>|
-                <li class="footer-nav-item"><a href="contact.html">Donation</a></li>|
-                <li  class="footer-nav-item"><a href="brochure.html">Brochure</a></li>|
-                <li  class="footer-nav-item"><a href="#cart">Cart</a></li>|
-            </ul>
-        </nav>
+    </section>
+
+    <!-- Search Bar and Filter Below Banner -->
+    <div class="search-container">
+        <form class="search-form" id="searchForm">
+            <input type="text" class="search-bar" id="searchInput" placeholder="Search products...">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+        <div class="filter-buttons">
+            <button class="filter-button" data-filter="all">All</button>
+            <button class="filter-button" data-filter="t-shirt">T-shirts</button>
+            <button class="filter-button" data-filter="sweater">Sweaters</button>
+            <button class="filter-button" data-filter="hoodie">Hoodies</button>
+            <button class="filter-button" data-filter="hat">Hats</button>
+            <button class="filter-button" data-filter="mug">Mugs</button>
+            <button class="filter-button" data-filter="bag">Bags</button>
+            <button class="filter-button" data-filter="cushion">Miscellaneous</button>
+        </div>
     </div>
-</footer>
 
+    <!-- Store Items -->
+    <div class="store-container" id="storeContainer">
+        <div class="item" data-category="t-shirt" data-name="Male T-shirt" data-description="Classic and comfortable, this men's t-shirt features a soft cotton blend and a timeless design. Perfect for everyday wear or casual outings." data-price="R150.00" data-image="images/products/5.png">
+            <img src="images/products/5.png" alt="Male T-shirt">
+            <div class="item-info">
+                <h3>Male T-shirt</h3>
+                <p>Classic and comfortable, this men's t-shirt features a soft cotton blend and a timeless design. Perfect for everyday wear or casual outings.</p>
+                <h1>R150.00</h1>  
+            </div>
+            <button class="item-button" onclick="redirectToItemDetails(event)"><img src="/icons/add-to-cart.png" alt="Cart" class="item-buttom-img"></button>
+        </div>
 
+        <div class="item" data-category="t-shirt" data-name="Female T-shirt" data-description="Stylish and versatile, this women's t-shirt combines a flattering fit with a soft, breathable fabric. Ideal for layering or wearing on its own." data-price="R150.00" data-image="images/products/6.png">
+            <img src="images/products/6.png" alt="Female T-shirt">
+            <div class="item-info">
+                <h3>Female T-shirt</h3>
+                <p> Stylish and versatile, this women's t-shirt combines a flattering fit with a soft, breathable fabric. Ideal for layering or wearing on its own.</p>
+                <h1>R150.00</h1> 
+            </div>
+            <button class="item-button" onclick="redirectToItemDetails(event)"><img src="/icons/add-to-cart.png" alt="Cart" class="item-buttom-img"></button>
+        </div>
+
+        <div class="item" data-category="sweater" data-name="Sweater" data-description="Cozy and chic, this sweater offers warmth and style with its soft knit and classic design. Great for layering during cooler weather" data-price="R200.00" data-image="images/products/8.png">
+            <img src="images/products/8.png" alt="Sweater">
+            <div class="item-info">
+                <h3>Sweater</h3>
+                <p>Cozy and chic, this sweater offers warmth and style with its soft knit and classic design. Great for layering during cooler weather.</p>
+                <h1>R200.00</h1>  
+            </div>
+            <button class="item-button" onclick="redirectToItemDetails(event)"><img src="/icons/add-to-cart.png" alt="Cart" class="item-buttom-img"></button>
+        </div>
+
+        <div class="item" data-category="hoodie" data-name="Hoodie" data-description="Relaxed and practical, this hoodie features a plush interior and adjustable drawstrings. Perfect for lounging or layering on chilly days." data-price="R200.00" data-image="images/products/4.png">
+            <img src="images/products/4.png" alt="Hoodie">
+            <div class="item-info">
+                <h3>Hoodie</h3>
+                <p>Relaxed and practical, this hoodie features a plush interior and adjustable drawstrings. Perfect for lounging or layering on chilly days.</p>
+                <h1>R200.00</h1>  
+            </div>
+            <button class="item-button" onclick="redirectToItemDetails(event)"><img src="/icons/add-to-cart.png" alt="Cart" class="item-buttom-img"></button>
+        </div>
+       
+        <div class="item" data-category="hat" data-name="Hat" data-description="This trendy hat adds a touch of style to any outfit with its comfortable fit and versatile design. Great for sun protection or making a fashion statement." data-price="R100.00" data-image="images/products/7.png">
+            <img src="images/products/7.png" alt="Hat">
+            <div class="item-info">
+                <h3>Hat</h3>
+                <p>This trendy hat adds a touch of style to any outfit with its comfortable fit and versatile design. Great for sun protection or making a fashion statement.</p>
+                <h1>R100.00</h1>  
+            </div>
+            <button class="item-button" onclick="redirectToItemDetails(event)"><img src="/icons/add-to-cart.png" alt="Cart" class="item-buttom-img"></button>
+        </div>
+
+        <div class="item" data-category="bag" data-name="Hat" data-description="Durable and spacious, this tote bag is perfect for carrying your essentials with ease. Its stylish design and sturdy handles make it a practical accessory." data-price="R100.00" data-image="images/products/2.png">
+            <img src="images/products/2.png" alt="Tote Bag">
+            <div class="item-info">
+                <h3>Tote Bag</h3>
+                <p>Durable and spacious, this tote bag is perfect for carrying your essentials with ease. Its stylish design and sturdy handles make it a practical accessory.</p>
+                <h1>R50.00</h1>  
+            </div>
+            <button class="item-button" onclick="redirectToItemDetails(event)"><img src="/icons/add-to-cart.png" alt="Cart" class="item-buttom-img"></button>
+        </div>
+       
+        <div class="item" data-category="mug" data-name="Mug" data-description="Enjoy your favorite beverages with this charming mug, featuring a comfortable handle and a classic design that adds a touch of warmth to your day" data-price="R50.00" data-image="images/products/1.png">
+            <img src="images/products/1.png" alt="Mug">
+            <div class="item-info">
+                <h3>Mug</h3>
+                <p>Enjoy your favorite beverages with this charming mug, featuring a comfortable handle and a classic design that adds a touch of warmth to your day.</p>
+                <h1>R50.00</h1>  
+            </div>
+            <button class="item-button" onclick="redirectToItemDetails(event)"><img src="/icons/add-to-cart.png" alt="Cart" class="item-buttom-img"></button>
+        </div>
+
+        
+        <div class="item" data-category="cushion" data-name="Cushion" data-description="Add comfort and style to your space with this plush cushion. Its soft fabric and modern design make it a cozy addition to any room." data-price="R50.00" data-image="images/products/3.png">
+            <img src="images/products/3.png" alt="Cushion">
+            <div class="item-info">
+                <h3>Cushion</h3>
+                <p>Add comfort and style to your space with this plush cushion. Its soft fabric and modern design make it a cozy addition to any room.</p>
+                <h1>R50.00</h1> 
+            </div>
+            <button class="item-button" onclick="redirectToItemDetails(event)"><img src="/icons/add-to-cart.png" alt="Cart" class="item-buttom-img"></button>
+        </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; 2024 HomeConnect. All rights reserved.</p>
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a href="home.html">Home</a></li>|
+                    <li class="footer-nav-item"><a href="news.html">News</a></li>|
+                    <li class="footer-nav-item"><a href="contact.html">Contact</a></li>|
+                    <li class="footer-nav-item"><a href="store.html">Store</a></li>|
+                    <li class="footer-nav-item"><a href="donation.html">Donation</a></li>|
+                    <li class="footer-nav-item"><a href="brochure.html">Brochure</a></li>|
+                    <li class="footer-nav-item"><a href="#cart">Cart</a></li>|
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="/java/store.js"></script>
 </body>
 </html>

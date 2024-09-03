@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/stylesheet.css">
-    <link rel="stylesheet" href="/css/dontation.css">
+    <link rel="stylesheet" href="/css/cart.css">
     <title>HomeConnect</title>
 </head>
 <body>
     <nav class="navbar">
+        <div class="nav-logo">
+            <img src="logo/Home Connect.png" alt="Home Connect Logo" class="nav-image">
+            <span class="nav-title">HomeConnect</span>
+        </div>
         <!-- Logo on the right -->
         <img src="/logo/Home Connect.png" alt="Image" class="nav-image">
 
@@ -28,6 +32,41 @@
             <li class="nav-item"><a class="active" href="/cart.html"><img src="/icons/add-to-cart.png" alt="Image" class="cart-image"></a></li>
         </ul>
     </nav>
+
+
+
+
+    <div id="cart-items-container">
+        <!-- JavaScript will dynamically add cart items here -->
+    </div>
+
+    <!-- Empty Cart Message -->
+    <div id="empty-cart-message" style="display: none;">
+        Your cart is empty. Go to the store to add some items!
+    </div>
+
+    <!-- Cart Summary -->
+    <div id="cart-summary" style="display: none;">
+        <span id="total-cart-price">R0.00</span>
+    </div>
+
+    <!-- Purchase Button -->
+    <button id="purchase-button" style="display: none;">Proceed to Checkout</button>
+    
+
+
+<!-- Checkout Modal -->
+<div id="checkout-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Checkout</h2>
+        <p>Total Amount: <span id="modal-total-price"></span></p>
+        <button id="confirm-checkout-button">Confirm Purchase</button>
+    </div>
+</div>
+
+
+
     <!-- footer -->
 <footer class="footer">
     <div class="footer-container">
@@ -48,6 +87,7 @@
     </div>
 </footer>
 
+<script src="/java/cart.js"></script>
 
 </body>
 </html>

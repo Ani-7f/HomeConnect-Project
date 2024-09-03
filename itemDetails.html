@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/itemDetails.css">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+
+    <title>Item Details</title>
+</head>
+<body>
+   
+        <nav class="navbar">
+
+            <!-- logo -->
+             <div class="nav-logo">
+                 <img src="logo/Home Connect.png" alt="Home Connect Logo" class="nav-image">
+                 <span class="nav-title">HomeConnect</span>
+             </div>
+     
+             <ul class="nav-list">
+                 <li class="nav-item"><a href="home.html">Home</a></li>
+                 <li class="nav-item"><a href="news.html">News</a></li>
+                 <li class="nav-item"><a href="contact.html">Contact</a></li>
+                 <li class="nav-item dropdown">
+                     <span class="dropdown-toggle" id="active">Get Involved</span> 
+                     <ul class="dropdown-menu">
+                         <li><a href="/store.html">Store</a></li>
+                         <li><a class="active" href="/donation.html">Donation</a></li>
+                     </ul>
+                 </li>
+                 <li class="nav-item"><a href="/brochure.html">Brochure</a></li>
+                 <li class="nav-item"><a href="/cart.html"><img src="/icons/add-to-cart.png" alt="Image" class="cart-image"></a></li>
+             </ul>
+         </nav>
+ 
+    
+         <main class="item-detail-container">
+            <div class="item-image">
+                <img src="" id="item-image" alt="Item Image">
+            </div>
+            <div class="item-details">
+                <h1 id="item-name">Item Name</h1>
+                <p id="item-description">Item Description</p>
+                <h2 id="item-price">Item Price</h2>
+        
+                <div class="size-options">
+                    <h3>Select Size:</h3>
+                    <select id="size-dropdown">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="x-large">X-Large</option>
+                    </select>
+                </div>
+        
+                <div class="amount-options">
+                    <h3>Quantity:</h3>
+                    <input type="number" id="amount" name="amount" min="1" value="1">
+                </div>
+        
+                <p>Free shipping on orders over R350</p>
+                <p>Free + easy returns</p>
+                <button class="add-to-bag" id="add-to-bag">Add to Bag</button>
+                <button class="go-to-cart" id="go-to-cart">Cart</button>
+            </div>
+        </main>
+        
+
+    <footer>
+        <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; 2024 HomeConnect. All rights reserved.</p>
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a href="home.html">Home</a></li>|
+                    <li class="footer-nav-item"><a href="news.html">News</a></li>|
+                    <li class="footer-nav-item"><a href="contact.html">Contact</a></li>|
+                    <li class="footer-nav-item"><a href="store.html">Store</a></li>|
+                    <li class="footer-nav-item"><a href="donation.html">Donation</a></li>|
+                    <li class="footer-nav-item"><a href="brochure.html">Brochure</a></li>|
+                    <li class="footer-nav-item"><a href="#cart">Cart</a></li>|
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    </footer>
+
+    <script src="/java/itemDetails.js"></script>
+</body>
+</html>

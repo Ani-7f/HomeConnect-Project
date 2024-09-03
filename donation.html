@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/stylesheet.css">
-    <link rel="stylesheet" href="/css/dontation.css">
+    <link rel="stylesheet" href="/css/dontation.css"> <!-- Fixed typo if necessary -->
     <title>HomeConnect</title>
 </head>
 <body>
     <nav class="navbar">
-        <!-- Logo on the right -->
-        <img src="/logo/Home Connect.png" alt="Image" class="nav-image">
+        <!-- logo -->
+        <div class="nav-logo">
+            <img src="logo/Home Connect.png" alt="Home Connect Logo" class="nav-image">
+            <span class="nav-title">HomeConnect</span>
+        </div>
 
         <ul class="nav-list">
             <li class="nav-item"><a href="home.html">Home</a></li>
@@ -29,43 +32,96 @@
         </ul>
     </nav>
 
-<!-- banner -->
+    <!-- banner -->
     <section class="banner">
         <div class="banner-content">
             <h1>Donate</h1>
-            <h1><div class="font-colour">Help</div> Others</h1>
+            <h1><span class="font-colour">Help</span> Others</h1>
         </div>
     </section>
-    
 
+    <!-- donations -->
+    <section class="donations">
+        <!-- Donation Panel 1 -->
+        <div id="donation-panel-1" class="donation-panel" data-panel-id="1" data-goal="20000">
+            <img src="/images/donate1.jpg" alt="Donation Image 1">
+            <h3>Food Distribution Services:</h3>
+            <p>Contributions to organizations that provide meals to homeless individuals. These services ensure that those without a home can still access nutritious food.</p>
+            <p><strong id="raised-amount-1" class="raised-amount">R0.00</strong></p>
+            <div class="progress-bar">
+                <div id="progress-1" class="progress" style="width: 0%;"></div>
+            </div>
+            <button class="donate-button" onclick="openDonationPopup(1)">Donate</button>
+        </div>
 
+        <!-- Donation Panel 2 -->
+        <div id="donation-panel-2" class="donation-panel" data-panel-id="2" data-goal="50000">
+            <img src="/images/donate2.jpg" alt="Donation Image 2">
+            <h3>Job Training and Employment Services:</h3>
+            <p>Donations that fund job training programs, career counseling, and employment assistance. These services help individuals experiencing homelessness gain the skills they need to secure stable employment.</p>
+            <p><strong id="raised-amount-2" class="raised-amount">R0.00</strong></p>
+            <div class="progress-bar">
+                <div id="progress-2" class="progress" style="width: 0%;"></div>
+            </div>
+            <button class="donate-button" onclick="openDonationPopup(2)">Donate</button>
+        </div>
 
+        <!-- Donation Panel 3 -->
+        <div id="donation-panel-3" class="donation-panel" data-panel-id="3" data-goal="90000">
+            <img src="/images/donate3.jpg" alt="Donation Image 3">
+            <h3>Emergency Shelter Programs:</h3>
+            <p>Support for shelters that provide safe, temporary housing for individuals and families experiencing homelessness. Donations help cover the cost of food, bedding, and other essential services.</p>
+            <p><strong id="raised-amount-3" class="raised-amount">R0.00</strong></p>
+            <div class="progress-bar">
+                <div id="progress-3" class="progress" style="width: 0%;"></div>
+            </div>
+            <button class="donate-button" onclick="openDonationPopup(3)">Donate</button>
+        </div>
 
+        <!-- Donation Panel 4 -->
+        <div id="donation-panel-4" class="donation-panel" data-panel-id="4" data-goal="20000">
+            <img src="/images/donate4.jpg" alt="Donation Image 4">
+            <h3>Mental Health and Addiction Services:</h3>
+            <p>Support for programs that offer mental health counseling, addiction treatment, and other health services to homeless individuals. These services are critical in helping people overcome challenges that contribute to homelessness.</p>
+            <p><strong id="raised-amount-4" class="raised-amount">R0.00</strong></p>
+            <div class="progress-bar">
+                <div id="progress-4" class="progress" style="width: 0%;"></div>
+            </div>
+            <button class="donate-button" onclick="openDonationPopup(4)">Donate</button>
+        </div>
+    </section>
 
+    <!-- Donation Popup -->
+    <div id="donationPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closeDonationPopup()">&times;</span>
+            <h2 id="popup-title">Donate</h2>
+            <input type="number" id="donationAmount" placeholder="Enter donation amount" min="1">
+            <button onclick="submitDonation()">Submit</button>
+        </div>
+    </div>
 
-
-
+    <script src="java/dontation.js"></script> <!-- Fixed typo if necessary -->
 
     <!-- footer -->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-info">
-            <p>&copy; 2024 HomeConnect. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; 2024 HomeConnect. All rights reserved.</p>
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a href="home.html">Home</a></li>|
+                    <li class="footer-nav-item"><a href="news.html">News</a></li>|
+                    <li class="footer-nav-item"><a href="contact.html">Contact</a></li>|
+                    <li class="footer-nav-item"><a href="store.html">Store</a></li>|
+                    <li class="footer-nav-item"><a href="donation.html">Donation</a></li>|
+                    <li class="footer-nav-item"><a href="brochure.html">Brochure</a></li>|
+                    <li class="footer-nav-item"><a href="#cart">Cart</a></li>|
+                </ul>
+            </nav>
         </div>
-        <nav class="footer-nav">
-            <ul class="footer-nav-list">
-                <li class="footer-nav-item"><a href="home.html">Home</a></li>|
-                <li class="footer-nav-item"><a href="news.html">News</a></li>|
-                <li class="footer-nav-item"><a href="contact.html">Contact</a></li>|
-                <li class="footer-nav-item"><a href="contact.html">Store</a></li>|
-                <li class="footer-nav-item"><a href="contact.html">Donation</a></li>|
-                <li  class="footer-nav-item"><a href="brochure.html">Brochure</a></li>|
-                <li  class="footer-nav-item"><a href="#cart">Cart</a></li>|
-            </ul>
-        </nav>
-    </div>
-</footer>
-
+    </footer>
 
 </body>
 </html>
