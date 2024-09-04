@@ -26,7 +26,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: url('/images/WhatsApp\ Image\ 2024-08-31\ at\ 21.00.25_335356ab.jpg'); /* Updated path */
+    background-image: url('images/WhatsApp\ Image\ 2024-08-31\ at\ 21.00.25_335356ab.jpg'); /* Updated path */
     background-size: cover;
     background-position: center;
     height: 400px;

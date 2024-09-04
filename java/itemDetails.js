@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
         // Redirect to cart page
-        window.location.href = '/cart.html';
+        window.location.href = 'cart.html';
     });
 
     // Go to Cart button functionality
     document.getElementById('go-to-cart').addEventListener('click', () => {
-        window.location.href = '/cart.html';
+        window.location.href = 'cart.html';
     });
 });
