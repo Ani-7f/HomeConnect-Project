@@ -5,20 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/stylesheet.css">
-    <link rel="stylesheet" href="/css/dontation.css">
+    <link rel="stylesheet" href="/css/news.css">
     <title>HomeConnect</title>
 </head>
 <body>
     <nav class="navbar">
         <!-- Logo on the right -->
-        <img src="/logo/Home Connect.png" alt="Image" class="nav-image">
-
-        <ul class="nav-list">
+        <div class="nav-logo">
+            <img src="logo/Home Connect.png" alt="Home Connect Logo" class="nav-image">
+            <span class="nav-title">HomeConnect</span>
+        </div>
+    
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <ul class="nav-list" id="navList">
             <li class="nav-item"><a href="home.html">Home</a></li>
-            <li class="nav-item"><a class="active" href="news.html">News</a></li>
+            <li class="nav-item"><a class="active"  href="news.html">News</a></li>
             <li class="nav-item"><a href="contact.html">Contact</a></li>
             <li class="nav-item dropdown">
-                <span class="dropdown-toggle" >Get Involved</span> 
+                <span class="dropdown-toggle">Get Involved</span> 
                 <ul class="dropdown-menu">
                     <li><a href="/store.html">Store</a></li>
                     <li><a href="/donation.html">Donation</a></li>
@@ -28,6 +38,236 @@
             <li class="nav-item"><a href="/cart.html"><img src="/icons/add-to-cart.png" alt="Image" class="cart-image"></a></li>
         </ul>
     </nav>
+    </nav>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Connecting Homes, Changing Lives</h2>
+            <p>Together, we can make a difference for those in need. Join us in supporting the homeless.</p>
+            <!-- Link to Donation Page -->
+            <a href="donation.html" class="cta-button">Donate Now</a>
+            <!-- Link to Store Page -->
+            <a href="store.html" class="cta-button secondary">Our Store</a>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h3>About HomeConnect</h3>
+            <p>HomeConnect is a platform dedicated to helping homeless individuals by connecting them with resources, shelters, and supportive communities. Our mission is to provide not just a temporary solution, but a pathway to a stable and fulfilling life.</p>
+        </div>
+    </section>
+
+    <!-- Featured Stories Section -->
+    <section id="stories" class="stories">
+        <div class="container">
+            <h3>Success Stories</h3>
+            <div class="story-item">
+                <h4>John's Journey to Stability</h4>
+                <p>John was homeless for over 5 years before finding help through HomeConnect. Today, he has a stable job and a place to call home.</p>
+            </div>
+            <div class="story-item">
+                <h4>Mary's New Beginning</h4>
+                <p>After losing her job, Mary found herself on the streets. HomeConnect connected her with a shelter, and now she’s rebuilding her life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <h4 class="faq-question">What is HomeConnect?</h4>
+                <p class="faq-answer">HomeConnect is a platform dedicated to helping homeless individuals by connecting them with resources, shelters, and supportive communities.</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="faq-question">How can I get involved?</h4>
+                <p class="faq-answer">You can get involved by donating, volunteering, or purchasing items from our store. Your contributions help make a difference in the lives of those in need.</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="faq-question">Where does my donation go?</h4>
+                <p class="faq-answer">Your donation goes directly to funding shelters, providing resources, and supporting programs that help homeless individuals rebuild their lives.</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="faq-question">Can I volunteer remotely?</h4>
+                <p class="faq-answer">Yes, we offer remote volunteer opportunities that allow you to contribute from anywhere. Check our Get Involved section for more details.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Volunteers -->
+    <section id="volunteers" class="volunteers">
+        <div class="container">
+            <h3>Volunteer Spotlight</h3>
+            <div class="volunteer-grid">
+                <div class="volunteer-item">
+                    <img src="images/Don.jpg" alt="Volunteer">
+                    <h4>Jane Smith</h4>
+                    <p>"Volunteering with HomeConnect has been life-changing. It's fulfilling to see the impact we make every day."</p>
+                </div>
+                <div class="volunteer-item">
+                    <img src="images/OIP.jpeg" alt="Volunteer">
+                    <h4>John Martin</h4>
+                    <p>"I love being a part of such a supportive and dedicated community. Every little bit helps!"</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section id="resources" class="resources">
+        <div class="container">
+            <h3>Useful Documents</h3>
+            <div class="resource-categories">
+                <div class="category-item">
+                    <h4>Job Search Resources</h4>
+                    <a href="https://drive.google.com/file/d/17VAEApDzIssKMVc8uD3g_9AKCDczLcQj/view?usp=sharing" download>Download Guide</a>
+                </div>
+                <div class="category-item">
+                    <h4>Mental Health Support</h4>
+                    <a href="https://drive.google.com/file/d/12otqNnc3YkkcS23joPTyqplDJur0bLmv/view?usp=drive_link" download>Download Guide</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section id="research-reports" class="research-reports">
+        <div class="container">
+            <h3>Research and Reports on Cape Town</h3>
+            <div class="report-list">
+                <div class="report-item">
+                    <h4>Homelessness in Cape Town: A Comprehensive Study</h4>
+                    <p>Published: January 2024</p>
+                    <a href="https://drive.google.com/file/d/1fLHrzwJZQyguikhkN81976l2V9u0D3HZ/view?usp=sharing" download>Download Report</a>
+                </div>
+                <div class="report-item">
+                    <h4>Impact of Urbanization on Homelessness in Cape Town</h4>
+                    <p>Published: March 2024</p>
+                    <a href="https://drive.google.com/file/d/1nxatOapZVcCXyaKV7OYLv4TKLPBP2sSy/view?usp=sharing" download>Download Report</a>
+                </div>
+                <div class="report-item">
+                    <h4>Mental Health Among the Homeless in Cape Town</h4>
+                    <p>Published: May 2024</p>
+                    <a href="https://drive.google.com/file/d/1Z4lX6aIEKgIep12piMrMzzrjWHvKFP3E/view?usp=sharing" download>Download Report</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- events -->
+
+    <section id="events" class="events">
+        <div class="container">
+            <h3>Upcoming Events</h3>
+            <ul class="event-list">
+                <li>
+                    <h4>Summer Clothing Drive</h4>
+                    <p>Date: December 10, 2024</p>
+                    <p>Location: Downtown Shelter</p>
+                    <a href="#" class="read-more" onclick="toggleDetails('winter_clothing_drive', event)">Read More</a>
+                    <div id="winter_clothing_drive" class="event-detail">
+                        <p>The Summer Clothing Drive is a community-driven initiative to collect comfortable clothing for those in need. Join us in making a difference by donating gently used summer apparel. The event will feature live music, refreshments, and a chance to meet fellow community members.</p>
+                        <p><strong>Event Schedule:</strong></p>
+                        <ul>
+                            <li>10:00 AM - Opening Ceremony</li>
+                            <li>11:00 AM - Donation Collection Begins</li>
+                            <li>01:00 PM - Live Music Performance</li>
+                            <li>03:00 PM - Refreshments and Community Social</li>
+                            <li>05:00 PM - Closing Remarks</li>
+                        </ul>
+                        <a href="#" class="back-button" onclick="toggleDetails('winter_clothing_drive', event)">Back to Events</a>
+                    </div>
+                </li>
+                <li>
+                    <h4>Holiday Fundraising Gala</h4>
+                    <p>Date: December 20, 2024</p>
+                    <p>Location: Grand Ballroom</p>
+                    <a href="#" class="read-more" onclick="toggleDetails('holiday_gala', event)">Read More</a>
+                    <div id="holiday_gala" class="event-detail">
+                        <p>The Holiday Fundraising Gala is our annual charity event aimed at raising funds for our community projects. Enjoy an elegant evening with dinner, dancing, and entertainment. The event will feature a silent auction, live music, and special guest appearances.</p>
+                        <p><strong>Event Schedule:</strong></p>
+                        <ul>
+                            <li>07:00 PM - Cocktail Reception</li>
+                            <li>08:00 PM - Dinner Service</li>
+                            <li>09:00 PM - Live Music and Entertainment</li>
+                            <li>10:30 PM - Silent Auction</li>
+                            <li>12:00 AM - Closing Remarks</li>
+                        </ul>
+                        <a href="#" class="back-button" onclick="toggleDetails('holiday_gala', event)">Back to Events</a>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+
+
+<!-- Impact section -->
+
+<section id="impact" class="impact">
+    <div class="container">
+        <h3>Our Impact</h3>
+        <div class="impact-stats">
+            <div class="stat-item">
+                <h4>People Helped</h4>
+                <p class="counter" data-target="1500">300</p>
+            </div>
+            <div class="stat-item">
+                <h4>Shelters Funded</h4>
+                <p class="counter" data-target="25">8</p>
+            </div>
+            <div class="stat-item">
+                <h4>Meals Provided</h4>
+                <p class="counter" data-target="20000">400</p>
+            </div>
+            <div class="stat-item">
+                <h4>Volunteer Hours</h4>
+                <p class="counter" data-target="5000">600</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h3>What People Are Saying</h3>
+            <div class="testimonial-item">
+                <p>"HomeConnect has been a beacon of hope for many. Their work is truly transformative."</p>
+                <span>- Sarah, Volunteer</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"Thanks to HomeConnect, I now have a home and a stable job. I am forever grateful."</p>
+                <span>- Michael, Beneficiary</span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
 
     <!-- footer -->
 <footer class="footer">
@@ -49,6 +289,7 @@
     </div>
 </footer>
 
-
+<script src="/java/nav.js"></script>
+<script src="/java/news.js"></script>
 </body>
 </html>

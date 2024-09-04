@@ -10,25 +10,32 @@
 </head>
 <body>
     <nav class="navbar">
-        <!-- Logo on the right with HomeConnect text -->
+        <!-- Logo on the right -->
         <div class="nav-logo">
             <img src="logo/Home Connect.png" alt="Home Connect Logo" class="nav-image">
             <span class="nav-title">HomeConnect</span>
         </div>
-        
-        <ul class="nav-list">
+    
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <ul class="nav-list" id="navList">
             <li class="nav-item"><a class="active" href="home.html">Home</a></li>
             <li class="nav-item"><a href="news.html">News</a></li>
             <li class="nav-item"><a href="contact.html">Contact</a></li>
             <li class="nav-item dropdown">
                 <span class="dropdown-toggle">Get Involved</span> 
                 <ul class="dropdown-menu">
-                    <li><a href="store.html">Store</a></li>
-                    <li><a href="donation.html">Donation</a></li>
+                    <li><a href="/store.html">Store</a></li>
+                    <li><a href="/donation.html">Donation</a></li>
                 </ul>
             </li>
-            <li class="nav-item"><a href="brochure.html">Brochure</a></li>
-            <li class="nav-item"><a href="cart.html"><img src="icons/add-to-cart.png" alt="Cart" class="cart-image"></a></li>
+            <li class="nav-item"><a href="/brochure.html">Brochure</a></li>
+            <li class="nav-item"><a href="/cart.html"><img src="/icons/add-to-cart.png" alt="Image" class="cart-image"></a></li>
         </ul>
     </nav>
     
@@ -111,5 +118,6 @@
 </footer>
 
 <script src="java/home.js"></script>
+<script src="/java/nav.js"></script>
 </body>
 </html>

@@ -20,25 +20,50 @@ document.getElementById('searchForm').addEventListener('submit', function(e) {
 // JavaScript for filter functionality
 const filterButtons = document.querySelectorAll('.filter-button');
 const items = document.querySelectorAll('.item');
+const filterDropdown = document.querySelector('.filter-dropdown select');
 
+// Function to filter items based on filter value
+function filterItems(filterValue) {
+    items.forEach(item => {
+        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+
+    // Set active button style
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+}
+
+// Handle filter button clicks
 filterButtons.forEach(button => {
     button.addEventListener('click', function() {
         const filterValue = this.getAttribute('data-filter');
-
-        items.forEach(item => {
-            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-
-        // Set active button style
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        this.classList.add('active');
+        filterItems(filterValue);
+        this.classList.add('active'); // Highlight the active button
     });
 });
 
+// Handle dropdown selection
+if (filterDropdown) {
+    filterDropdown.addEventListener('change', function() {
+        const filterValue = this.value;
+        filterItems(filterValue);
+    });
+}
+
+// Optional: Add active class to the selected dropdown option
+filterDropdown.addEventListener('change', function() {
+    const selectedValue = this.value;
+    filterButtons.forEach(button => {
+        if (button.getAttribute('data-filter') === selectedValue) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });
+});
 
 function redirectToItemDetails(event) {
     event.preventDefault();

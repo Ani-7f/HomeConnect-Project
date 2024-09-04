@@ -5,15 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/stylesheet.css">
-    <link rel="stylesheet" href="/css/dontation.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <title>HomeConnect</title>
 </head>
 <body>
     <nav class="navbar">
         <!-- Logo on the right -->
-        <img src="/logo/Home Connect.png" alt="Image" class="nav-image">
-
-        <ul class="nav-list">
+        <div class="nav-logo">
+            <img src="logo/Home Connect.png" alt="Home Connect Logo" class="nav-image">
+            <span class="nav-title">HomeConnect</span>
+        </div>
+    
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <ul class="nav-list" id="navList">
             <li class="nav-item"><a href="home.html">Home</a></li>
             <li class="nav-item"><a href="news.html">News</a></li>
             <li class="nav-item"><a class="active" href="contact.html">Contact</a></li>
@@ -28,6 +38,53 @@
             <li class="nav-item"><a  href="/cart.html"><img src="/icons/add-to-cart.png" alt="Image" class="cart-image"></a></li>
         </ul>
     </nav>
+
+
+
+    <div class="content-wrapper">
+        <!-- Contact Form -->
+        <div class="contact-container">
+            <h1 class="contact-title">Contact Me</h1>
+            <p class="contact-subtitle">Fields marked with an asterisk are required to be filled in.</p>
+    
+            <label for="name" class="contact-label">Name</label>
+            <input type="text" id="name" name="name" class="contact-input" required>
+    
+            <label for="email" class="contact-label">Email</label>
+            <input type="email" id="email" name="email" class="contact-input" required>
+    
+            <label for="message" class="contact-label">Message</label>
+            <textarea id="message" name="message" class="contact-textarea" required></textarea>
+    
+            <!-- Wellness Program Dropdown -->
+            <label for="program" class="contact-label">Which program would you like to contact?</label>
+            <select id="program" name="program" class="contact-dropdown">
+                <option value="program1">Gift of the Givers</option>
+                <option value="program2">The Haven Night Shelter</option>
+                <option value="program3">The Salvation Army - Southern Africa</option>
+                <option value="program4">The Homeless Shelter</option>
+                <option value="program5">Ikamva Labantu</option>
+                <option value="program6">Sonke Gender Justice</option>
+                <option value="program7">Operation Hunger</option>
+                <option value="program8">Africa Tikkun</option>
+                <option value="program9">StreetSmart South Africa</option>
+                <option value="program10">U-Turn Homeless Ministries</option>
+            </select>
+    
+            <!-- Submit Button -->
+            <button type="submit" class="contact-submit">Submit</button>
+        </div>
+
+        <!-- Contact Image -->
+        <div class="contact-image-container">
+            <div class="image-border-top"></div>
+            <img src="/images/contact.jpg" alt="Contact Image" class="contact-image">
+            <div class="image-border-bottom"></div>
+        </div>
+    </div>
+
+
+
 
     <!-- footer -->
 <footer class="footer">
@@ -49,6 +106,7 @@
     </div>
 </footer>
 
+<script src="/java/nav.js"></script>
 
 </body>
 </html>

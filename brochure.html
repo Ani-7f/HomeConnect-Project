@@ -11,15 +11,20 @@
 <body>
     <!-- New Navigation Bar -->
     <nav class="navbar">
-      
         <!-- Logo on the right -->
         <div class="nav-logo">
             <img src="logo/Home Connect.png" alt="Home Connect Logo" class="nav-image">
             <span class="nav-title">HomeConnect</span>
         </div>
-
-        <ul class="nav-list">
-
+    
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <ul class="nav-list" id="navList">
             <li class="nav-item"><a href="home.html">Home</a></li>
             <li class="nav-item"><a href="news.html">News</a></li>
             <li class="nav-item"><a href="contact.html">Contact</a></li>
@@ -31,7 +36,7 @@
                 </ul>
             </li>
             <li class="nav-item"><a class="active" href="/brochure.html">Brochure</a></li>
-            <li class="nav-item"><a href="/cart.html"><img src="/icons/add-to-cart.png" alt="Image" class="cart-image"></a></li>
+            <li class="nav-item"><a  href="/cart.html"><img src="/icons/add-to-cart.png" alt="Image" class="cart-image"></a></li>
         </ul>
     </nav>
 
@@ -118,5 +123,7 @@
             </nav>
         </div>
     </footer>
+
+    <script src="/java/nav.js"></script>
 </body>
 </html>

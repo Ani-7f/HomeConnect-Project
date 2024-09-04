@@ -14,10 +14,11 @@
     font-size: 3rem; 
     margin: 0; 
     font-weight: bold;
+    color: #ffffff;
 }
 
 .font-colour, #font-colour{
-    color: #ffffff;
+    color: #a5b77b;
 }
 
 

@@ -15,25 +15,33 @@
             <img src="logo/Home Connect.png" alt="Home Connect Logo" class="nav-image">
             <span class="nav-title">HomeConnect</span>
         </div>
-
-        <ul class="nav-list">
+    
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <ul class="nav-list" id="navList">
             <li class="nav-item"><a href="home.html">Home</a></li>
             <li class="nav-item"><a href="news.html">News</a></li>
             <li class="nav-item"><a href="contact.html">Contact</a></li>
             <li class="nav-item dropdown">
-                <span class="dropdown-toggle" >Get Involved</span> 
+                <span class="dropdown-toggle">Get Involved</span> 
                 <ul class="dropdown-menu">
                     <li><a href="/store.html">Store</a></li>
-                    <li><a  href="/donation.html">Donation</a></li>
+                    <li><a href="/donation.html">Donation</a></li>
                 </ul>
             </li>
             <li class="nav-item"><a href="/brochure.html">Brochure</a></li>
             <li class="nav-item"><a class="active" href="/cart.html"><img src="/icons/add-to-cart.png" alt="Image" class="cart-image"></a></li>
         </ul>
     </nav>
+    
 
-
-
+    <div class="cart-checkout-wrapper">
+    <div class="cart-container">
 
     <div id="cart-items-container">
         <!-- JavaScript will dynamically add cart items here -->
@@ -52,18 +60,40 @@
     <!-- Purchase Button -->
     <button id="purchase-button" style="display: none;">Proceed to Checkout</button>
     
+</div>
 
 
+ 
 <!-- Checkout Modal -->
 <div id="checkout-modal" class="modal">
     <div class="modal-content">
         <span class="close-button">&times;</span>
         <h2>Checkout</h2>
-        <p>Total Amount: <span id="modal-total-price"></span></p>
-        <button id="confirm-checkout-button">Confirm Purchase</button>
+        <p>Total Amount: <span id="modal-total-price">R0.00</span></p>
+        <form id="checkout-form">
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required />
+            </div>
+            <div class="form-group">
+                <label for="card-name">Cardholder Name</label>
+                <input type="text" id="card-name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY" required />
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="123" required />
+            </div>
+            <button type="submit" id="confirm-checkout-button">Confirm Purchase</button>
+        </form>
     </div>
 </div>
 
+
+</div>
 
 
     <!-- footer -->
@@ -85,7 +115,7 @@
         </nav>
     </div>
 </footer>
-
+<script src="/java/nav.js"></script>
 <script src="/java/cart.js"></script>
 
 </body>
